@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get a free quote for forestry mulching and land clearing services. No obligation, transparent pricing.">
+  <title>Get a Free Quote | Bret's Mulching</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">BM</span>
+        <span>Bret's Mulching</span>
+      </a>
+
+      <nav class="nav nav--desktop">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <a href="quote.html" class="btn btn--primary header__cta">Get a Quote</a>
+
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="nav-overlay"></div>
+  <nav class="nav nav--mobile">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="services.html" class="nav__link">Services</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="faq.html" class="nav__link">FAQ</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="quote.html" class="btn btn--primary btn--full mt-md">Get a Quote</a>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="breadcrumbs__separator">/</span>
+        <span class="breadcrumbs__current">Get a Quote</span>
+      </nav>
+      <h1 class="page-header__title">Request Your Free Quote</h1>
+      <p class="page-header__text">
+        Tell us about your project and we'll get back to you with transparent, fixed pricing. No obligation, no pressure.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quote Form Section -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div style="background: var(--color-dark-gray); padding: var(--spacing-xl); border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+        <form id="quote-form" class="form">
+          <!-- Contact Information -->
+          <h3 style="margin-bottom: var(--spacing-md); padding-bottom: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-family: var(--font-body); text-transform: none;">
+            Contact Information
+          </h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label form-label--required" for="name">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label form-label--required" for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label form-label--required" for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="preferred-contact">Preferred Contact Method</label>
+              <select id="preferred-contact" name="preferred-contact" class="form-select">
+                <option value="phone">Phone Call</option>
+                <option value="text">Text Message</option>
+                <option value="email">Email</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Property Information -->
+          <h3 style="margin-top: var(--spacing-xl); margin-bottom: var(--spacing-md); padding-bottom: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-family: var(--font-body); text-transform: none;">
+            Property Information
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label form-label--required" for="address">Property Address</label>
+            <input type="text" id="address" name="address" class="form-input" placeholder="Street address, city, state, zip" required>
+            <span class="form-hint">This helps us understand your location and terrain</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="property-size">Estimated Property Size</label>
+              <select id="property-size" name="property-size" class="form-select">
+                <option value="">Select size...</option>
+                <option value="less-than-half">Less than 1/2 acre</option>
+                <option value="half-to-one">1/2 to 1 acre</option>
+                <option value="one-to-two">1 to 2 acres</option>
+                <option value="two-to-five">2 to 5 acres</option>
+                <option value="five-plus">5+ acres</option>
+                <option value="not-sure">Not sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="source">How Did You Hear About Us?</label>
+              <select id="source" name="source" class="form-select">
+                <option value="">Select...</option>
+                <option value="facebook">Facebook</option>
+                <option value="nextdoor">Nextdoor</option>
+                <option value="google">Google Search</option>
+                <option value="yard-sign">Yard Sign</option>
+                <option value="referral">Friend/Neighbor Referral</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Service Details -->
+          <h3 style="margin-top: var(--spacing-xl); margin-bottom: var(--spacing-md); padding-bottom: var(--spacing-sm); border-bottom: 1px solid var(--color-border); font-family: var(--font-body); text-transform: none;">
+            Service Details
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label">What services are you interested in?</label>
+            <div class="form-checkbox-group">
+              <label class="form-checkbox">
+                <input type="checkbox" name="services" value="forestry-mulching">
+                <span>Forestry Mulching</span>
+              </label>
+              <label class="form-checkbox">
+                <input type="checkbox" name="services" value="brush-hogging">
+                <span>Brush Hogging</span>
+              </label>
+              <label class="form-checkbox">
+                <input type="checkbox" name="services" value="fence-line">
+                <span>Fence Line Clearing</span>
+              </label>
+              <label class="form-checkbox">
+                <input type="checkbox" name="services" value="lot-clearing">
+                <span>Lot Clearing</span>
+              </label>
+              <label class="form-checkbox">
+                <input type="checkbox" name="services" value="not-sure">
+                <span>Not Sure / Need Advice</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="description">Tell Us About Your Project</label>
+            <textarea id="description" name="description" class="form-textarea" rows="4" placeholder="Describe the current state of your property, what you'd like to accomplish, any specific concerns or questions..."></textarea>
+            <span class="form-hint">The more details you provide, the more accurate our quote will be</span>
+          </div>
+
+          <div style="background: var(--color-accent-dim); border: 1px solid var(--color-accent); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: var(--spacing-lg);">
+            <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-muted);">
+              <strong style="color: var(--color-accent);">Pro Tip:</strong> Text or email us photos of your property for faster, more accurate quotes. Send to <a href="mailto:info@bretsmulching.com">info@bretsmulching.com</a> or <a href="tel:+15551234567">(555) 123-4567</a>
+            </p>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--large btn--full">
+            Submit Quote Request
+          </button>
+
+          <p style="margin-top: var(--spacing-md); color: var(--color-text-muted); font-size: 0.875rem; text-align: center;">
+            We typically respond within 24 hours. No spam, no pressure.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="section section--darker">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">What Happens Next?</h2>
+      </div>
+
+      <div class="process-steps" style="max-width: 900px; margin: 0 auto;">
+        <div class="process-step">
+          <div class="process-step__content">
+            <h3 class="process-step__title">We Review Your Request</h3>
+            <p class="process-step__text">
+              We'll look at your property details and photos to understand the scope of work.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__content">
+            <h3 class="process-step__title">We Reach Out</h3>
+            <p class="process-step__text">
+              Within 24 hours, we'll contact you via your preferred method to discuss your project.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__content">
+            <h3 class="process-step__title">You Get a Quote</h3>
+            <p class="process-step__text">
+              We'll provide a fixed, transparent price for your project. No hidden fees, no surprises.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Bret's Mulching</div>
+          <p class="footer__text">
+            Professional forestry mulching and land clearing services. Transforming overgrown properties into usable land since day one.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Services</h4>
+          <nav class="footer__links">
+            <a href="services/forestry-mulching.html" class="footer__link">Forestry Mulching</a>
+            <a href="services/brush-hogging.html" class="footer__link">Brush Hogging</a>
+            <a href="services/fence-line-clearing.html" class="footer__link">Fence Line Clearing</a>
+            <a href="services/land-clearing.html" class="footer__link">Lot Clearing</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Company</h4>
+          <nav class="footer__links">
+            <a href="about.html" class="footer__link">About Us</a>
+            <a href="faq.html" class="footer__link">FAQ</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="quote.html" class="footer__link">Get a Quote</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Contact</h4>
+          <div class="footer__contact-item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <span>(555) 123-4567</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span>info@bretsmulching.com</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Mon-Sat: 8am - 6pm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Bret's Mulching. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form-handler.js"></script>
+</body>
+</html>
