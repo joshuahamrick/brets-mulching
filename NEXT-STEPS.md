@@ -40,11 +40,13 @@ Send him the Vercel or Netlify URL. That’s the “prod” link. Every push to 
 
 ## Step 3: How your friend can work (from phone or laptop)
 
-- **From phone:** He can use **ClaudeBox** (claudebox.io) or **GitHub Codespaces** in the browser, open this repo, and prompt the AI to edit. Then he commits and pushes to `main`; the live URL updates.
-- **From laptop:** He can clone the repo, use **Cursor** or **Claude Code**, make changes, then push to `main`.
+- **From phone (ClaudeBox):** See **CLAUDEBOX-SETUP.md** for step-by-step: sign in at claudebox.io, start a session, clone this repo, prompt Claude to edit, then commit and push. Same flow works for you.
+- **From phone (Codespaces):** GitHub Codespaces in the browser → open this repo → edit with Copilot.
+- **From laptop:** Clone the repo, use **Cursor** or **Claude Code**, make changes, then push to `main`.
 
-**Clone command for him:**  
-`git clone git@github.com:joshuahamrick/brets-mulching.git`
+**Clone command:**  
+`git clone https://github.com/joshuahamrick/brets-mulching.git`  
+(Or with SSH: `git clone git@github.com:joshuahamrick/brets-mulching.git`)
 
 ---
 
