@@ -585,6 +585,7 @@ p {
 
 .hero__stat {
   text-align: center;
+  flex: 1;
 }
 
 .hero__stat-value {
