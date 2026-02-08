@@ -603,6 +603,21 @@ p {
   letter-spacing: 0.1em;
 }
 
+@media (max-width: 639px) {
+  .hero__stats {
+    gap: var(--spacing-sm);
+  }
+
+  .hero__stat-value {
+    font-size: 1.5rem;
+  }
+
+  .hero__stat-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+  }
+}
+
 /* ========================================
    Trust Badges
    ======================================== */
