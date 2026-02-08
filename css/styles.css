@@ -456,6 +456,31 @@ p {
   color: var(--color-black);
 }
 
+.btn--accent {
+  background: var(--color-accent);
+  color: var(--color-black);
+  border: 3px solid var(--color-accent);
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.4), 0 0 30px rgba(249, 115, 22, 0.2);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.btn--accent:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: var(--color-black);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.6), 0 0 40px rgba(249, 115, 22, 0.3);
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.4), 0 0 30px rgba(249, 115, 22, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(249, 115, 22, 0.6), 0 0 50px rgba(249, 115, 22, 0.3);
+  }
+}
+
 .btn--large {
   padding: 1.25rem 3rem;
   font-size: 1rem;
